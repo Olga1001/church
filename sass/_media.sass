@@ -1,0 +1,221 @@
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 992px) and (max-width: 1169px)
+  .map-content
+    height: 64.96vw
+  .points-item
+    width: 4vw
+    height: 4.61vw
+  .pin
+    font-size: 1.37vw
+    padding-top: 2.14vw
+    background-size: 4vw 4.61vw
+  #pin-1
+    left: 12.73vw
+    top: 7.35vw
+  #pin-2
+    left: 22.3vw
+    top: 8.8vw
+  #pin-3
+    left: 31.96vw
+    top: 12.3vw
+  #pin-4
+    left: 43.5vw
+    top: 14vw
+  #pin-5
+    left: 51.37vw
+    top: 5.98vw
+  #pin-6
+    right: 31.3vw
+    top: 8.8vw
+  #pin-7
+    left: 7.35vw
+    top: 20vw
+  #pin-8
+    left: 16.6vw
+    top: 22.6vw
+  #pin-9
+    left: 24.27vw
+    top: 21.28vw
+  #pin-10
+    left: 33.33vw
+    top: 26.58vw
+  #pin-11
+    left: 44.7vw
+    top: 24.78vw
+  #pin-12
+    right: 32vw
+    top: 20vw
+  #pin-13
+    right: 17.52vw
+    top: 21.36vw
+  #pin-14
+    right: 4.36vw
+    top: 25vw
+  #pin-15
+    left: 3.33vw
+    bottom: 29.57vw
+  #pin-16
+    left: 11.7vw
+    top: 28vw
+  #pin-17
+    left: 18.8vw
+    top: 30.25vw
+  #pin-18
+    right: 40.5vw
+    top: 30.34vw
+  #pin-19
+    right: 25.47vw
+    top: 29.9vw
+  #pin-20
+    right: 11.36vw
+    bottom: 26.32vw
+  #pin-21
+    left: 42.13vw
+    bottom: 18.8vw
+  #pin-22
+    right: 42.8vw
+    bottom: 20.25vw
+  #pin-23
+    bottom: 17vw
+    right: 33.9vw
+  #pin-24
+    right: 21.8vw
+    bottom: 20.25vw
+  #pin-25
+    bottom: 4.87vw
+    right: 30vw
+@media only screen and (max-width : 1170px)
+  .map
+    .title-v4
+      width: 100%
+    .select, .btn
+      min-width: auto
+      width: calc(50% - 15px)
+      margin: 20px 30px 0 0
+    .select-v2, .btn
+      margin-right: 0
+  .about
+    width: calc(100% - 600px)
+  .profile
+    margin-right: 30px
+
+
+@media only screen and (max-width : 991px)
+  .first .row
+    display: block
+  .profiles
+    padding: 0
+  .about
+    width: 100%
+    padding-bottom: 40px
+  .news-item
+    width: calc(33.33% - 10px)
+    margin: 35px 15px 0 0
+  .header
+    padding: 25px 0
+    .header-right
+      padding-right: 11px
+    .logo-img
+      width: 320px
+    .investigation-img
+      width: 100px
+      margin-bottom: 8px
+    .social-img
+      width: 12px
+      height: 12px
+    .social
+      margin: 9px 0 0 9px
+  .profile
+    margin-right: 55px
+  .map-img
+    display: none
+  .points-item, .popup
+    position: inherit
+    height: auto
+    width: 100%
+  .popup
+    display: block
+    padding: 0
+    box-shadow: none
+  .map-content
+    height: auto
+  .points-item
+    display: flex
+    border-radius: 3px
+    box-shadow: 0 0 30px 0 rgba(96, 96, 96, 0.35)
+    background-color: #ffffff
+    padding: 15px
+    width: calc(50% - 7.5px)
+    margin: 0 15px 15px 0
+    &:nth-child(2n+2)
+      margin-right: 0
+  .points
+    display: flex
+    flex-wrap: wrap
+  .pin
+    width: 47px
+    height: 54px
+    margin-right: 20px
+    flex-shrink: 0
+  .popup-title
+    clear: both
+  .popup-text
+    float: left
+    margin-right: 10px
+@media only screen and (max-width : 767px)
+  .title-v1, .profile-name
+    font-size: 18px
+  .title-v2
+    font-size: 27px
+  .title-v3
+    font-size: 36px
+    line-height: 1
+  p
+    font-size: 14px
+  .profile-span
+    font-size: 13px
+  .profile
+    margin-right: 30px
+  .news-item, .news-item:nth-child(3n+3)
+    width: calc(50% - 15px)
+    margin: 35px 30px 0 0
+  .news-item:nth-child(2n+2)
+    margin-right: 0
+@media only screen and (max-width : 600px)
+  .profile-avatar
+    width: 110px
+    height: 110px
+  .map .select, .map .btn
+    width: 100%
+    margin: 15px 0 0 0
+  .header .logo-img
+    width: 100%
+    max-width: 200px
+  .btn
+    font-size: 14px
+    line-height: 45px
+  .select-item
+    line-height: 45px
+  input, textarea
+    padding: 13px
+  .magnifier
+    transform: scale(0.7)
+  .search-form .btn
+    width: 45px
+    padding: 0
+  .news-item, .news-item:nth-child(3n+3)
+    width: 100%
+    margin: 30px 0 0 0
+  .points-item
+    width: 100%
+    margin: 0 0 15px
+@media only screen and (max-width : 480px)
+  .header .row
+    display: block
+  .header-right
+    padding: 30px 0 0
+    width: fit-content
+

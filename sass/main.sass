@@ -1,0 +1,365 @@
+@import "fonts"
+
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+*::-webkit-input-placeholder
+  font-family: "MazzardH-Light", sans-serif
+  font-size: 16px
+  font-weight: 300
+  font-stretch: normal
+  font-style: normal
+  line-height: 20px
+  letter-spacing: normal
+  text-align: center
+  color: #9e9e9e
+
+*:-moz-placeholder
+  font-family: "MazzardH-Light", sans-serif
+  font-size: 16px
+  font-weight: 300
+  font-stretch: normal
+  font-style: normal
+  line-height: 20px
+  letter-spacing: normal
+  text-align: center
+  color: #9e9e9e
+
+*::-moz-placeholder
+  font-family: "MazzardH-Light", sans-serif
+  font-size: 16px
+  font-weight: 300
+  font-stretch: normal
+  font-style: normal
+  line-height: 20px
+  letter-spacing: normal
+  text-align: center
+  color: #9e9e9e
+
+*:-ms-input-placeholder
+  font-family: "MazzardH-Light", sans-serif
+  font-size: 16px
+  font-weight: 300
+  font-stretch: normal
+  font-style: normal
+  line-height: 20px
+  letter-spacing: normal
+  text-align: center
+  color: #9e9e9e
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+  display: block
+
+ol, ul
+  list-style: none
+
+blockquote, q
+  quotes: none
+
+blockquote:before, blockquote:after, q:before, q:after
+  content: ''
+  content: none
+
+a
+  outline: none
+  text-decoration: none
+  color: #000000
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+body
+  font-family: "MazzardH-Regular", sans-serif
+  position: relative
+  line-height: normal
+  font-style: normal
+  font-weight: normal
+  font-stretch: normal
+  letter-spacing: normal
+  color: #000000
+
+img
+  display: block
+  object-fit: contain
+
+input, textarea
+  border: none
+  outline: none
+  font-family: "MazzardH-Light", sans-serif
+  font-size: 16px
+  font-weight: 300
+  font-stretch: normal
+  font-style: normal
+  line-height: 20px
+  letter-spacing: normal
+  padding: 20px 30px 21px
+  width: 100%
+  border-radius: 0
+
+button
+  cursor: pointer
+  outline: none
+  border: none
+
+button:focus
+  outline: none
+
+p
+  font-family: "MazzardH-Light", sans-serif
+  font-size: 18px
+  font-weight: 300
+  font-stretch: normal
+  font-style: normal
+  line-height: 1.33
+  letter-spacing: normal
+  color: #131313
+
+strong
+  font-family: "Roboto-Bold", sans-serif
+  font-style: normal
+  font-weight: bold
+
+.container
+  max-width: 1170px
+  width: 100%
+  margin: 0 auto
+  padding: 0 15px
+
+.header
+  padding: 55px 0 45px
+  box-shadow: 0 0 30px 0 rgba(176, 141, 81, 0.15)
+  background-color: #ffffff
+  position: sticky
+  top: 0
+  left: 0
+  width: 100%
+  z-index: 8
+  border-bottom: 2px solid #d9b068
+  transition: all 0.3s ease
+  &.collapse
+    padding: 25px 0
+    .header-right
+      padding-right: 11px
+    .logo-img
+      width: 320px
+    .investigation-img
+      width: 100px
+      margin-bottom: 8px
+    .social-img
+      width: 12px
+      height: 12px
+    .social
+      margin: 9px 0 0 9px
+  &-right
+    padding-right: 22px
+    padding-top: 5px
+    transition: all 0.3s ease
+
+
+.row
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+
+.logo-img
+  width: 535px
+  height: auto
+  transition: all 0.3s ease
+
+.socials
+  display: flex
+  align-items: center
+
+.investigation
+  display: block
+  &-img
+    width: 167px
+    height: auto
+    margin: 0 auto 15px
+    transition: all 0.3s ease
+
+.social
+  margin: 19px 0 0 18px
+  display: flex
+  justify-content: center
+  align-items: center
+  &-img
+    width: 20px
+    height: 20px
+    transition: all 0.3s ease
+
+.btn
+  line-height: 60px
+  display: block
+  padding: 0 23px
+  width: fit-content
+  font-family: "MazzardH-Bold", sans-serif
+  font-size: 16px
+  font-weight: bold
+  font-stretch: normal
+  font-style: normal
+  letter-spacing: normal
+  text-align: center
+  text-transform: uppercase
+  &-red
+    color: #ffffff
+    min-width: 200px
+    background-color: #9b1e22
+  &-brown
+    min-width: 260px
+    background-color: #d9b068
+
+.select
+  position: relative
+  width: fit-content
+  min-width: 235px
+  &.active
+    .select-item:before
+      transform: translateY(-50%) scale(1,-1)
+  &-item
+    font-family: "MazzardH-Light", sans-serif
+    font-size: 16px
+    font-weight: 300
+    color: #9e9e9e
+    white-space: nowrap
+    text-overflow: ellipsis
+    overflow: hidden
+    border-radius: 3px
+    background: #fff
+    line-height: 60px
+    padding: 0 60px 0 20px
+    cursor: pointer
+    &:before
+      content: ''
+      position: absolute
+      right: 20px
+      top: 50%
+      transform: translateY(-50%)
+      background: url("../img/arrow.svg") no-repeat center / contain
+      width: 15px
+      height: 15px
+      transition: all 0.3s ease
+    &.active
+      color: #333333
+  &-menu
+    position: absolute
+    left: 0
+    width: 100%
+    top: calc(100% + 4px)
+    border-radius: 3px
+    box-shadow: 0px 15px 20px 0 rgba(96, 96, 96, 0.2)
+    background-color: #ffffff
+    z-index: 2
+    padding: 10px 28px
+    display: none
+
+.option
+  font-size: 16px
+  line-height: 2.25
+  color: #333333
+  cursor: pointer
+  transition: all 0.3s ease
+  &:hover, &.active
+    color: #9b1e23
+
+
+.select-v2
+  min-width: 265px
+
+.footer
+  background-color: #000000
+  padding: 18px 0
+  &-text
+    font-size: 14px
+    line-height: 1
+    color: #7c7c7c
+    width: 100%
+    text-align: center
+
+.align-center
+  align-items: center
+
+.line-clamp
+  display: block
+  display: -webkit-box
+  -webkit-box-orient: vertical
+  position: relative
+  line-height: 1.3
+  overflow: hidden
+  text-overflow: ellipsis
+
+.line-clamp:after
+  content: '...'
+  text-align: center
+  bottom: 0
+  right: 0
+  width: 25%
+  display: block
+  position: absolute
+  height: calc(1em * 1.33)
+  background: linear-gradient(to left, rgba(241, 242, 246, 0.1), rgba(241, 242, 246, 0.5) 75%)
+
+@supports (-webkit-line-clamp: 1)
+  .line-clamp:after
+    display: none !important
+  .line-clamp
+    -webkit-line-clamp: 3
+    height: calc(1em * 1.33 * 3)
+
+.title-v1
+  font-family: "MazzardH-SemiBold", sans-serif
+  font-size: 24px
+  font-weight: 600
+  font-stretch: normal
+  font-style: normal
+  line-height: 1.5
+  letter-spacing: normal
+  color: #9b1e22
+  border-bottom: 1px dashed #9b1e22
+
+.title-v2
+  font-family: "MazzardH-Bold", sans-serif
+  font-size: 36px
+  font-weight: bold
+  font-stretch: normal
+  font-style: normal
+  line-height: 1
+  color: #131313
+
+.title-v3
+  font-family: "MazzardH-Bold", sans-serif
+  font-size: 48px
+  font-weight: bold
+  line-height: 0.63
+  text-align: center
+  color: #ffffff
+
+.title-v4
+  font-family: "MazzardH-Bold", sans-serif
+  font-size: 24px
+  font-weight: bold
+  line-height: 1.25
+  color: #000000
+
+@import "../components/pages/main/style"
+
+@import "media"
+// Всегда в конце
