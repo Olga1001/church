@@ -173,8 +173,10 @@
   .title-v3
     font-size: 36px
     line-height: 1
-  p
+  p, p.pop__date
     font-size: 14px
+  .text
+    font-size: 16px
   .profile-span
     font-size: 13px
   .profile
@@ -184,6 +186,39 @@
     margin: 35px 30px 0 0
   .news-item:nth-child(2n+2)
     margin-right: 0
+  .accordion-item
+    padding: 15px 15px 15px 0
+  .accordion-item:before
+    width: 15px
+    height: 15px
+  .accordion-item img
+    width: 20px
+    height: 20px
+  .title-v5
+    font-size: 18px
+    line-height: 1.1
+  .accordion__content li a
+    font-size: 14px
+    line-height: 2
+  .pop-first .title-v2
+    margin: 30px 0 20px
+  .pop-row svg
+    margin-right: 15px
+  .property-item img
+    margin-right: 20px
+    width: 30px
+    height: 31px
+  .list-article
+    display: flex
+    flex-wrap: wrap
+  .list-article li
+    display: block
+    width: calc(50% - 15px)
+    margin: 0 30px 20px 0
+    &:nth-child(2n+2)
+      margin-right: 0
+  .article-img
+    width: 100%
 @media only screen and (max-width : 600px)
   .profile-avatar
     width: 110px
@@ -212,6 +247,18 @@
   .points-item
     width: 100%
     margin: 0 0 15px
+  .pop-flex
+    display: block
+  .pop-avatar
+    margin: 0 0 30px 0
+  .news-img
+    height: 56vw
+  .article-img
+    min-height: 56vw
+  .list-article li
+    width: 100%
+    margin: 0 0 20px 0
+
 @media only screen and (max-width : 480px)
   .header .row
     display: block

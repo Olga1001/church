@@ -6,9 +6,8 @@ $(window).scroll(function() {
     } else{
         $('header').removeClass('collapse');
     }
-
-
 });
+
 $(document).ready(function () {
     //select
     $(".select-item").click(function () {
@@ -20,11 +19,16 @@ $(document).ready(function () {
         $(this).addClass('active').siblings().removeClass('active');
         $(this).closest(".select-menu").slideUp(300);
         $(this).closest(".select").removeClass('active').find(".select-item").addClass('active').text(option);
-
     });
 
     //map
     $(".points-item").click(function () {
         $(this).addClass('active').siblings().removeClass('active');
+    });
+
+    //accordion
+    $(".accordion-item").click(function () {
+        $(this).toggleClass('active').parent().siblings().find(".accordion-item").removeClass('active');
+        $(this).parent().find(".accordion__content").slideToggle(300).closest(".accordion-list").siblings().find(".accordion__content").slideUp(300);
     });
 });
