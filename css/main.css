@@ -585,7 +585,8 @@ strong {
     font-weight: bold;
     line-height: 1.33;
     color: #9b1e23;
-    padding-top: 6px; }
+    padding-top: 6px;
+    display: block; }
   .news-img {
     width: 100%;
     height: 180px;
@@ -923,7 +924,8 @@ p.pop__date {
   font-weight: bold;
   line-height: 1.2;
   color: #9b1e23;
-  margin: 20px 0 9px; }
+  margin: 20px 0 9px;
+  display: block; }
 
 .article-text {
   font-size: 16px;
