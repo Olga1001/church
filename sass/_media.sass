@@ -104,6 +104,14 @@
 
 
 @media only screen and (max-width : 991px)
+  .profiles-li
+    display: flex
+    flex-direction: column
+    align-items: center
+  .about-project .title-v2
+    text-align: center
+  #wrapper-content
+    padding-top: 110px
   .first .row
     display: block
   .profiles
@@ -258,11 +266,39 @@
   .list-article li
     width: 100%
     margin: 0 0 20px 0
-
+  .pop-avatar
+    margin: 0 auto 30px
 @media only screen and (max-width : 480px)
   .header .row
-    display: block
-  .header-right
-    padding: 30px 0 0
+    //display: block
+  .header-right, .header .header-right, .header.collapse .header-right
+    padding: 0
     width: fit-content
+    flex-shrink: 0
+  #wrapper-content
+    padding-top: 110px
+  .logo
+    width: calc(100% - 125px)
+  .header.collapse .logo-img
+    width: 100%
+  .header
+    height: 110px
+    .row
+      align-items: center
+  .investigation-img
+    margin: 0!important
+  .socials
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+    bottom: 20px
+  .social
+    margin: 0 10px!important
+  .profile
+    margin-right: 15px
+    width: calc(33.33% - 10px)
+    display: block
+  .profile-avatar
+    width: 80px
+    height: 80px
 

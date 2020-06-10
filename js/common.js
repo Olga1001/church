@@ -1,7 +1,7 @@
 //header
 $(window).scroll(function() {
     let height = $(window).scrollTop();
-    if(height > 1){
+    if(height >= 100){
         $('header').addClass('collapse');
     } else{
         $('header').removeClass('collapse');
@@ -19,6 +19,15 @@ $(document).ready(function () {
         $(this).addClass('active').siblings().removeClass('active');
         $(this).closest(".select-menu").slideUp(300);
         $(this).closest(".select").removeClass('active').find(".select-item").addClass('active').text(option);
+    });
+
+    $("body, html").click(function () {
+        $(".select-item").removeClass('active');
+        $(".select").removeClass('active');
+        $(".select-menu").slideUp(300);
+    });
+    $(".select ").click(function (e) {
+        e.stopPropagation();
     });
 
     //map
